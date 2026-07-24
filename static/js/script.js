@@ -14,7 +14,7 @@ function askAI() {
     response.innerHTML = "Thinking...";
 
     // Send request to Flask backend
-    fetch("http://127.0.0.1:5000/ask", {
+    fetch("/ask", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
